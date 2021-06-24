@@ -39,10 +39,6 @@
 
 - Configure your pipeline and add a webhook to both your Jenkins project and your SCM.
 
-- Run a script to install Ansible on the Jenkins Server (please see other repositories for this information)
-
-- Run a playbook to clone your repository to the Jenkins instance
-
 - Ensure that your inventory file has the correct IP address of the deployment instance you are using (can also be found on the AWS instances console)
 
 - Copy the private key (.pem) file of your deployment instance and place it in the .ssh folder of your Jenkins instance under both the jenkins user and ubuntu user (this step may be edited - it may also involve root user, although this is unlikely).
@@ -51,4 +47,3 @@
 
 - Test your build on the Jenkins Server. Hopefully it will fail a few times before it builds successfully - it's all part of the fun!
 
-- There may be something very very wrong with this project!

@@ -49,4 +49,4 @@
 
 - Currently on build 27
 
-- This approach has been rather complicated - a private key has to be generated on the jenkins instance as jenkins user with 'NOPASSWD' enabled in sudo visudo. The corresponding public key then needs to be placed on the deploy instance, then the key itself needs its permissions changed using the 'chmod' command because it was created manually.
+- This approach has been rather complicated - a private key has to be generated on the jenkins instance as jenkins user with 'NOPASSWD' enabled in sudo visudo. 

@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Pre') { 
             steps {
-                sh "ansible-playbook -vvvv -i inventory.yaml playbook.yaml"
+                sh "cd /home/jenkins/.jenkins/workspace/FlaskApp ansible-playbook -vvvv -i inventory.yaml playbook.yaml"
             }
         }
         stage('Test') { 

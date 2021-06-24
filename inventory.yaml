@@ -4,9 +4,9 @@
     children:
       deploy:
         hosts:
-          18.132.249.201
+          18.132.249.201:
     vars:
-      ansible_user=ubuntu
-      ansible_ssh_private_key_file=/home/jenkins/.ssh/ansible_id_rsa
-      ansible_ssh_common_args='-o StrictHostKeyChecking=no'
+      ansible_user: ubuntu
+      ansible_ssh_private_key_file: /home/jenkins/.ssh/ansible_id_rsa
+      ansible_ssh_common_args: '-o StrictHostKeyChecking=no'
 

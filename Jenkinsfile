@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Pre') { 
             steps {
-                sh "ansible-playbook -v -i inventory.yaml playbook.yaml"
+                sh "ansible-playbook -vvvv -i inventory.yaml playbook.yaml"
             }
         }
         stage('Test') { 

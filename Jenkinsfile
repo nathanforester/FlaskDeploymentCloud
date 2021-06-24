@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Pre') { 
             steps {
-                sh "cd /home/jenkins/.local/bin/ && ansible-playbook -v -i --inventory.yaml --playbook.yaml"
+                sh "cd /home/jenkins/.local/bin/ && ansible-playbook -v -i inventory.yaml playbook.yaml"
             }
         }
         stage('Test') { 

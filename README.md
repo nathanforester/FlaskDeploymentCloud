@@ -49,4 +49,6 @@
 
 - Change permissions on the newly created and copied key file, either with chmod 400 or 600 (I prefer 400 myself for an extra layer of security).
 
-- Test your build on the Jenkins Server. Hopefully it will fail a few times before it builds successfully - it's all part of the fun! 
+- Test your build on the Jenkins Server. Hopefully it will fail a few times before it builds successfully - it's all part of the fun!
+
+- There may be something very very wrong with this project!

@@ -53,4 +53,4 @@
 
 - Anomolous results with reconfiguration - not building this repo
 
-- may need to configure Ansible plugin
+- may need to configure Ansible plugin - and also install Ansible onto node, ensuring it is in the PATH

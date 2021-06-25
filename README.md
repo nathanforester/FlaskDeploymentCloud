@@ -49,4 +49,6 @@
 
 - Currently on build 27
 
-- This approach has been rather complicated - a private key has to be generated on the jenkins instance as jenkins user with 'NOPASSWD' enabled in sudo visudo. 
+- This approach has been rather complicated - a private key has to be generated on the jenkins instance as jenkins user with 'NOPASSWD' enabled in sudo visudo.
+
+- This approach worked but the VMs need to be reconfigured if testing daily.

@@ -55,4 +55,6 @@
 
 - may need to configure Ansible plugin - and also install Ansible onto node, ensuring it is in the PATH
 
-- Add key files to .ssh folder in jenkins folder. If no .ssh folder exists, create one. 
+- Add key files to .ssh folder in jenkins folder. If no .ssh folder exists, create one.
+
+- The Jenkins pipeline should not require such ridiculously complex configuration.

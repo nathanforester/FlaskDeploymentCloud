@@ -51,3 +51,4 @@
 
 - This approach has been rather complicated - a private key has to be generated on the jenkins instance as jenkins user with 'NOPASSWD' enabled in sudo visudo.
 
+- Anomolous results with reconfiguration

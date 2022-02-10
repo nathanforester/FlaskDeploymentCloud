@@ -7,7 +7,7 @@ from application import app, db
 from application.models import Movies, Review
 from application.forms import MoviesForm, ReviewForm
 
-@app.route('/', methods= ['POST', 'GET'])
+@app.route('/', methods= ['GET', 'POST'])
 def index():
     all_movies = Movies.query.all()
     return render_template('index.html', all_movies=all_movies)
@@ -53,8 +53,3 @@ def add_review(idnum):
 def reviews(idnum):
     reviews = Review.query.filter_by(movies_id=idnum).all()
     return render_template ('reviews.html', reviews=reviews)
-
-@app.route('/stopServer', methods=['GET'])
-def stopServer():
-    os.kill(os.getpid(), signal.SIGINT)
-    return jsonify({ "success": True, "message": "Server is shutting down..." })
